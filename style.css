@@ -36,7 +36,8 @@ div#big {
 	width: 800px;
 	margin: auto;
 	/*padding-top: 3em	;*/
-	border: 3px solid black;
+	display: flex;
+	flex-direction: row;
 }
 div.left-side {
 	border: 2px solid grey;
@@ -48,6 +49,7 @@ div.left-side {
 	height: 400px;
 	width: 150px;
 	line-height: 3em;
+	flex-grow: 2;
 }
 
 div.right-side {
@@ -55,15 +57,21 @@ div.right-side {
 	text-align: justify;
 	background-color: lightgreen;
 	display: inline-block;
-	margin-left: 3em;
+	margin-left: 4.5em;
 	margin-right: -3em;
 	width: 550px;
 	line-height: 2em;
+	padding-right: -3em;
+	flex-grow: 3;
 }
 
 div.right-side h2 p {
 	margin: 4em;
 	padding: 10px 30px;
+}
+
+div.left-side label {
+	padding-left: 1em;
 }
 
 input {
@@ -72,12 +80,4 @@ input {
 	padding: 4px;
 	margin: 2px 1px 1px 1px;
 	border-collapse: separate;
-}
-
-section#artist {
-	
-}
-
-section#album {
-	
 }
