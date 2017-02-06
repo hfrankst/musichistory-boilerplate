@@ -51,7 +51,8 @@ div.left-side {
 	height: 400px;
 	width: 150px;
 	line-height: 3em;
-	flex-grow: 2;
+	order: 1;
+	flex-grow: 1;
 }
 
 div.right-side {
@@ -60,11 +61,12 @@ div.right-side {
 	background-color: lightgreen;
 	display: inline-block;
 	margin-left: 4.5em;
-	margin-right: -3em;
 	width: 550px;
 	line-height: 2em;
 	padding-right: -3em;
-	flex-grow: 3;
+	order: 2;
+	flex-basis: auto;
+	flex-grow: 1;
 }
 
 div.right-side h2 p {
@@ -74,6 +76,10 @@ div.right-side h2 p {
 
 div.left-side label {
 	padding-left: 1em;
+}
+
+div.left-side select {
+
 }
 
 input {
