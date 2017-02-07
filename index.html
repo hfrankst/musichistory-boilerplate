@@ -4,25 +4,61 @@
 <head>
   <meta charset="utf-8">
   <title>Music History</title>
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-	<header><!--NAV--></header>
+	<header>
+		<nav><a href="#">View Music |</a></nav>
+	</header>
 	<body>
-		<div class="sidebar">
-			<select name="artist">
-				<option></option>
-				<option></option>
-				<option></option>
-				<option></option>
-				<option></option>
-			</select>
-			<select name="album">
-				<option></option>
-				<option></option>
-				<option></option>
-				<option></option>
-				<option></option>
-			</select>
+
+		<div id="big">
+
+			<div class="left-side">
+				<input type="range" min="0" max="50" value="25" />
+
+				<br>
+				
+				<label>Artist:</label>
+
+				<br>
+				
+				<select name="artist" id="artist">
+					<option>Led Zepplin</option>
+					<option>AC/DC</option>
+					<option>The White Stripes</option>
+					<option>Miles Davis</option>
+					<option>Louis Armstrong</option>
+				</select>
+
+				<br>
+
+				<label>Album:</label>
+
+				<br>
+				
+				<select name="album" id="album">
+					<option>Mothership</option>
+					<option>Black Ice</option>
+					<option>Elephant</option>
+					<option>Kind of Blue</option>
+					<option>Hello Louis!</option>
+				</select>
+			</div>
+
+			<div class="right-side">
+				<h2>What a Wonderful World</h2>
+					<p>Louis Armstrong | Hello Louis! | Jazz</p>
+				<h2>Khasmir</h2>
+					<p>Led Zepplin | Mothership | Rock</p>
+				<h2>Freddie Freeloader</h2>
+					<p>Miles Davis | Kind of Blue | Jazz</p>
+				<h2>You Shook Me All Night Long</h2>
+					<p>ACDC | Black Ice | Rock</p>
+			</div>
+
 		</div>
-		<div class="right-side"></div>
+
+		<script type="text/javascript" src="songs.js"></script>
 	</body>
 </html>
