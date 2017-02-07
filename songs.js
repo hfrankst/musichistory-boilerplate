@@ -9,9 +9,10 @@ console.log("Songs to be added by loop: ", songs);
 	//this loop will take out any incorrect characters in the song strings..so far it's not working
 for (var i = 0; i < songs.length; i++){
 	var charReplace = songs[i].replace('>', '-').replace('*', '').replace('@', '').replace('!', '');
-	
-	// console.log("The line break", lineBreak);
-	document.getElementsByClassName('right-side')[0].append(charReplace);
+	// var songParagraph = document.createElement('p');
+	// songParagraph.append(charReplace);
+	document.getElementsByClassName('right-side')[0].append(charReplace)
+	document.getElementsByClassName('right-side')[0].insertAdjacentHTML('beforeend', '<br>');
 	console.log("Songs: ", charReplace);
 };
 
