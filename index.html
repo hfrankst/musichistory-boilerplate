@@ -7,15 +7,18 @@
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-	<header>
-		<nav><a href="#">View Music |</a></nav>
-	</header>
 	<body>
+	<header>
+		<nav>
+			<a href="index.html">List Music |</a>
+			<a href="#" id="add-music">Add Music |</a>
+		</nav>
+	</header>
 
 		<div id="big">
 
 			<div class="left-side">
-				<input type="range" min="0" max="50" value="25" />
+				<input id="slider" type="range" min="0" max="50" value="25" />
 
 				<br>
 				
@@ -59,6 +62,19 @@
 
 		</div>
 
+		<div id="userInput">
+			<form id="input-form">
+				Song Name: <input type="text" name="song" id="song"><br><br>
+				Artist: <input type="text" name="artist" id="artist"><br><br>
+				Album: <input type="text" name="album" id="album"><br><br>
+					<br><br>
+				<button type="button" id="addBtn">Add</button>
+			</form>
+
+		</div>
+
+
+		<script type="text/javascript" src="add.js"></script>
 		<script type="text/javascript" src="songs.js"></script>
 	</body>
 </html>
