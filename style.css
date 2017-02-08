@@ -21,20 +21,21 @@ nav {
 	height: 3em;
 	width: 800px;
 	margin: .5em auto;
-	display: table;
+	display: flex;
+	align-content: space-around;
+	align-items: center;
 }
 
 nav a {
 	padding: 4px 2px;
 	margin: 3px 0 -3px 0;
-	vertical-align: middle;
 	text-decoration: none;
-	display: table-cell;
 }
+
 
 /***Body***/
 
-div#big {
+div.mainPageDisplay{
 	width: 800px;
 	margin: auto;
 	/*padding-top: 3em	;*/
@@ -82,10 +83,28 @@ div.left-side select {
 
 }
 
-input {
+input#slider {
 	background-color: grey;
 	border: 1px solid grey;
 	padding: 4px;
 	margin: 2px 1px 1px 1px;
 	border-collapse: separate;
+}
+
+/***********User Input Form************/
+
+div#userInput {
+	display: flex;
+	justify-content: center;
+	flex-basis: 100%;
+	margin-top: 2em;
+}
+
+#input-form input{
+	align-items: center;
+	flex-grow: 3;
+}
+
+.byebye {
+	display: none !important;
 }
