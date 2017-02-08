@@ -24,8 +24,10 @@ console.log("Songs to be added by loop: ", songs);
 	pushToDOM();
 
 	//setting an event listener to the click of the 'Add Music' nav link, this is going to hide the index.html layout to switch with the addmusic layout
-	document.getElementById('add-music').addEventListener('click', function{
+	document.getElementById('add-music').addEventListener('click', function() {
 		//hide 'big' and show 'userInput'
+		//toggle between class lists on button click, have the visibility in css go from 'hidden' to whatever the value for being visible is.  
+		document.getElementById('big').classList.toggle('byebye');
 
 	});
 return oldnewsong;

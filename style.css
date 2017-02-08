@@ -35,7 +35,7 @@ nav a {
 
 /***Body***/
 
-div#big {
+div.mainPageDisplay{
 	width: 800px;
 	margin: auto;
 	/*padding-top: 3em	;*/
@@ -94,11 +94,10 @@ input#slider {
 /***********User Input Form************/
 
 div#userInput {
-	visibility: hidden;
 	display: flex;
 	justify-content: center;
-	/*align-content: center;*/
 	flex-basis: 100%;
+	margin-top: 2em;
 }
 
 #input-form input{
@@ -106,4 +105,6 @@ div#userInput {
 	flex-grow: 3;
 }
 
-
+.byebye {
+	display: none !important;
+}
