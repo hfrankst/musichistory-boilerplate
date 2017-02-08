@@ -1,6 +1,110 @@
-/***Header***/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 80%;
+	margin: 2em auto;
+	background-color: white;
+	background-position: center;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+
+
 
 /***Nav***/
+nav {
+	border: 2px solid grey;
+	background-color: pink;
+	height: 3em;
+	width: 800px;
+	margin: .5em auto;
+	display: flex;
+	align-content: space-around;
+	align-items: center;
+}
+
+nav a {
+	padding: 4px 2px;
+	margin: 3px 0 -3px 0;
+	text-decoration: none;
+}
+
 
 /***Body***/
 
+div.mainPageDisplay{
+	width: 800px;
+	margin: auto;
+	/*padding-top: 3em	;*/
+	display: flex;
+	flex-direction: row;
+}
+div.left-side {
+	border: 2px solid grey;
+	text-align: left;
+	background-color: lightyellow;
+	display: inline-block;
+	margin-right: 1.5em;
+	margin-bottom: 100px;
+	height: 400px;
+	width: 150px;
+	line-height: 3em;
+	order: 1;
+	flex-grow: 1;
+}
+
+div.right-side {
+	border: 2px solid grey;
+	text-align: justify;
+	background-color: lightgreen;
+	display: inline-block;
+	margin-left: 4.5em;
+	width: 550px;
+	line-height: 2em;
+	padding-right: -3em;
+	order: 2;
+	flex-basis: auto;
+	flex-grow: 1;
+}
+
+div.right-side h2 p {
+	margin: 4em;
+	padding: 10px 30px;
+}
+
+div.left-side label {
+	padding-left: 1em;
+}
+
+div.left-side select {
+
+}
+
+input#slider {
+	background-color: grey;
+	border: 1px solid grey;
+	padding: 4px;
+	margin: 2px 1px 1px 1px;
+	border-collapse: separate;
+}
+
+/***********User Input Form************/
+
+div#userInput {
+	display: flex;
+	justify-content: center;
+	flex-basis: 100%;
+	margin-top: 2em;
+}
+
+#input-form input{
+	align-items: center;
+	flex-grow: 3;
+}
+
+.byebye {
+	display: none !important;
+}
