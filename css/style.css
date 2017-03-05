@@ -3,16 +3,33 @@ body {
 	margin: 1em;
 }
 
+#nav-heading{
+	text-decoration: underline;
+	font-weight: 700;
+}
 .divider {
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
 .right-side {
-	border: 1px solid black;
+	/*border: 3px groove black;*/
 	display: inline-block;
+	height: 400px;
+	overflow: auto;
 }
 
+.left-side {
+	/*border: 3px groove black;*/
+	display: inline-block;
+	height: 400px;
+	width: 200px;
+	top: 0;
+	left: 0;
+}
 
+#userInput {
+	width: 300px;
+}
 
 
 
