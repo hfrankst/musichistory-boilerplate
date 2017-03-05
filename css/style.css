@@ -1,4 +1,54 @@
-* {
+
+body {
+	margin: 1em;
+}
+
+.divider {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.right-side {
+	border: 1px solid black;
+	display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**********************I WILL PROBABLY USE SOME OF THIS, BUT I WANT TO GET MATERIALIZE TO WORK FIRST****/
+
+
+/** {
 	margin: 0;
 	padding: 0;
 }
@@ -11,11 +61,11 @@ body {
 	font-family: 'Ubuntu', sans-serif;
 }
 
-
+*/
 
 
 /***Nav***/
-nav {
+/*nav {
 	border: 2px solid grey;
 	background-color: pink;
 	height: 3em;
@@ -30,46 +80,50 @@ nav a {
 	padding: 4px 2px;
 	margin: 3px 0 -3px 0;
 	text-decoration: none;
-}
+}*/
 
 
 /***Body***/
 
-div.mainPageDisplay{
+/*.container {
+	background-color: teal;
+}*/
+
+/*div.mainPageDisplay{
 	width: 800px;
 	margin: auto;
-	/*padding-top: 3em	;*/
+	padding-top: 3em	;
 	display: flex;
 	flex-direction: row;
-}
-div.left-side {
+}*/
+/*div.left-side {
 	border: 2px solid grey;
 	text-align: left;
 	background-color: lightyellow;
 	display: inline-block;
-	margin-right: 1.5em;
+*/	/*margin-right: 1.5em;
 	margin-bottom: 100px;
 	height: 400px;
-	width: 150px;
-	line-height: 3em;
-	order: 1;
-	flex-grow: 1;
-}
+	width: 150px;*/
+	/*line-height: 3em;*/
+	/*order: 1;*/
+	/*flex-grow: 1;*/
+/*}*/
 
-div.right-side {
+/*div.right-side {
 	border: 2px solid grey;
 	text-align: justify;
 	background-color: lightgreen;
 	display: inline-block;
-	margin-left: 4.5em;
+*/	/*margin-left: 4.5em;
 	width: 550px;
 	line-height: 2em;
 	padding-right: -3em;
-	order: 2;
-	flex-basis: auto;
+*/	/*order: 2;*/
+/*	flex-basis: auto;
 	flex-grow: 1;
-}
-
+}*/
+/*
 div.right-side h2 p {
 	margin: 4em;
 	padding: 10px 30px;
@@ -90,10 +144,10 @@ input#slider {
 	margin: 2px 1px 1px 1px;
 	border-collapse: separate;
 }
-
+*/
 /***********User Input Form************/
 
-div#userInput {
+/*div#userInput {
 	display: flex;
 	justify-content: center;
 	flex-basis: 100%;
@@ -106,5 +160,6 @@ div#userInput {
 }
 
 .byebye {
-	display: none !important;
+	display: none;
 }
+*/

@@ -2,23 +2,31 @@
 
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Music History</title>
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+	<title>Music History</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 	<body>
-	<header>
-		<nav>
-			<a href="index.html">List Music |</a>
+	
+<!-- 	<div ng-view></div>
+ -->
+
+	<div class="container col l5">
+		<header>
+			<nav>
+				<a href="index.html">List Music |</a>
 			<a href="#" id="add-music">Add Music |</a>
 		</nav>
-	</header>
+		</header>
+	</div>
 
-		<div id="big" class="mainPageDisplay">
+	<div class="divider"></div>
 
-			<div class="left-side">
-				<input id="slider" type="range" min="0" max="50" value="25" />
+		<div id="big" class="container mainPageDisplay teal lighten-2">
+
+			<div class="left-side col s3 offset s2 push-s7">
+				<!-- <input id="slider" type="range" min="0" max="50" value="25" maxlength="20" /> -->
 
 				<br>
 				
@@ -49,20 +57,20 @@
 				</select>
 			</div>
 
-			<div class="right-side">
-				<h2>What a Wonderful World</h2>
+			<div class="right-side col s4 offset s6">
+				<h5>What a Wonderful World</h5>
 					<p>Louis Armstrong | Hello Louis! | Jazz</p>
-				<h2>Khasmir</h2>
+				<h5>Khasmir</h5>
 					<p>Led Zepplin | Mothership | Rock</p>
-				<h2>Freddie Freeloader</h2>
+				<h5>Freddie Freeloader</h5>
 					<p>Miles Davis | Kind of Blue | Jazz</p>
-				<h2>You Shook Me All Night Long</h2>
+				<h5>You Shook Me All Night Long</h5>
 					<p>ACDC | Black Ice | Rock</p>
 			</div>
 
 		</div>
 
-		<div id="userInput">
+		<div class="container center-align valign-wrapper" id="userInput">
 			<form id="input-form">
 				Song Name: <input type="text" name="song" id="song"><br><br>
 				Artist: <input type="text" name="artist" id="singer"><br><br>
@@ -73,7 +81,17 @@
 
 		</div>
 
+			<!-- ANGULAR AND MATERIALIZE JS FILES -->
+	<script src="/lib/node_modules/angular/angular.min.js"></script>
+	<script src="/lib/node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
 
+			<!-- APP FILE -->
+	<script src="/app/app.js"></script>
+
+			<!-- CTRL FILES -->
+
+		<!-- probably going to have to delete these -->
 		<script type="text/javascript" src="add.js"></script>
 		<script type="text/javascript" src="songs.js"></script>
 	</body>
