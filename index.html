@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html lang="en">
+<html lang="en" ng-app="MusicHistory">
 <head>
 	<meta charset="utf-8">
 	<title>Music History</title>
@@ -9,87 +9,26 @@
 </head>
 	<body>
 	
-<!-- 	<div ng-view></div>
- -->
+	<div ng-include="'partials/navbar.html'"></div>
 
-	<div class="container col l5 center-align">
-		<header>
-			<h6 id="nav-heading">The Greatest of Music History's</h6>
-			<nav class="hoverable">
-				<a href="index.html">List Music |</a>
-				<a href="#" id="add-music">Add Music |</a>
-			</nav>
-		</header>
-	</div>
+	<div ng-view></div>
 
-	<div class="divider"></div>
 
-		<div id="big" class="container mainPageDisplay">
 
-			<div class="left-side col s12 m6 offset s2 left-aligned hoverable  yellow accent-3">
-				<!-- <input id="slider" type="range" min="0" max="50" value="25" maxlength="20" /> -->
-
-				<br>
-				
-				<label>Artist:</label>
-
-				<br>
-				
-				<select name="artist" id="artist">
-					<option>Led Zepplin</option>
-					<option>AC/DC</option>
-					<option>The White Stripes</option>
-					<option>Miles Davis</option>
-					<option>Louis Armstrong</option>
-				</select>
-
-				<br>
-
-				<label>Album:</label>
-
-				<br>
-				
-				<select name="album" id="album">
-					<option>Mothership</option>
-					<option>Black Ice</option>
-					<option>Elephant</option>
-					<option>Kind of Blue</option>
-					<option>Hello Louis!</option>
-				</select>
-			</div>
-
-			<div class="right-side col s12 m6 offset s6 right-aligned hoverable teal accent-3">
-				<h5>What a Wonderful World</h5>
-					<p>Louis Armstrong | Hello Louis! | Jazz</p>
-				<h5>Khasmir</h5>
-					<p>Led Zepplin | Mothership | Rock</p>
-				<h5>Freddie Freeloader</h5>
-					<p>Miles Davis | Kind of Blue | Jazz</p>
-				<h5>You Shook Me All Night Long</h5>
-					<p>ACDC | Black Ice | Rock</p>
-			</div>
-
-		</div>
-
-		<div class="container col s12 offset s4 hoverable center-align" id="userInput">
-			<form id="input-form">
-				Song Name: <input type="text" name="song" id="song"><br><br>
-				Artist: <input type="text" name="artist" id="singer"><br><br>
-				Album: <input type="text" name="album" id="record"><br><br>
-					<br><br>
-				<button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>			
-	    	</form>
-		</div>
+	
+	
 
 			<!-- ANGULAR AND MATERIALIZE JS FILES -->
-	<script src="/lib/node_modules/angular/angular.min.js"></script>
-	<script src="/lib/node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+		<script src="/lib/node_modules/angular/angular.min.js"></script>
+		<script src="/lib/node_modules/jquery/dist/jquery.min.js"></script>
+	 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
 
 			<!-- APP FILE -->
-	<script src="/app/app.js"></script>
+		<script src="/app/app.js"></script>
 
 			<!-- CTRL FILES -->
+		<script src="/controllers/SongFormCtrl.js"></script>
+		<script src="/controllers/SongDetailCtrl.js"></script>
 
 		<!-- probably going to have to delete these -->
 		<script type="text/javascript" src="add.js"></script>
