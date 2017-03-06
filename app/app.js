@@ -1,6 +1,6 @@
 "use strict";
 
-var app = angular.module('MusicHistory', ['ngRoute']);
+var app = angular.module("MusicHistory", ['ngRoute']);
 
 app.config(function($routeProvider) {
 	$routeProvider.
@@ -14,3 +14,7 @@ app.config(function($routeProvider) {
 	}).
 	otherwise('/');
 });
+
+// app.run(function(){
+	
+// });

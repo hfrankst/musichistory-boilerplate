@@ -1,15 +1,15 @@
 <!doctype html>
 
-<html lang="en" ng-app='MusicHistory'>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<title>Music History</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-	<body>
+<body ng-app="MusicHistory">
 	
-	<div ng-include="'/partials/navbar.html'"></div>
+	<div ng-include="'partials/navbar.html'"></div>
 
 	<div ng-view></div>
 
@@ -20,6 +20,7 @@
 
 			<!-- ANGULAR AND MATERIALIZE JS FILES -->
 		<script src="/lib/node_modules/angular/angular.min.js"></script>
+		<script src="/lib/node_modules/angular-route/angular-route.min.js"></script>
 		<script src="/lib/node_modules/jquery/dist/jquery.min.js"></script>
 	 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
 
@@ -34,5 +35,5 @@
 <!-- 		<script type="text/javascript" src="add.js"></script>
 		<script type="text/javascript" src="songs.js"></script>
  -->	
- 	</body>
+</body>
 </html>
