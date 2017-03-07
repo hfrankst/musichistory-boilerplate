@@ -23,23 +23,33 @@ app.config(function($routeProvider) {
 		templateUrl: 'partials/login.html',
 		controller: "UserCtrl"
 	}).
+    when('/login', {
+        templateUrl: 'partials/login.html',
+        controller: 'UserCtrl'
+    }).
+    when('/logout', {
+        templateUrl: 'partials/login.html',
+        controller: 'UserCtrl'
+    }).
 	when('/details', {
 		templateUrl: 'partials/song-details.html',
-		controller: "SongDetailCtrl"
+		controller: "SongDetailCtrl",
+		resolve: {isAuth}
 	}).
 	when('/form', {
 		templateUrl: "partials/song-form.html",
-		controller: "SongFormCtrl"
+		controller: "SongFormCtrl",
+		resolve: {isAuth}
 	}).
 	otherwise('/');
 });
 
 app.run(($location, FBCreds) => {
- let creds = FBCreds;
+ 	let creds = FBCreds;
     let authConfig = {
         apiKey: creds.apiKey,
         authDomain: creds.authDomain,
         databaseURL: creds.databaseURL
     };
-  firebase.initializeApp(authConfig);
+  	firebase.initializeApp(authConfig);
 });

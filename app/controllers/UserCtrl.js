@@ -51,7 +51,7 @@ console.log("USERCONTROL");
             // $scope.isLoggedIn = true;
             // console.log("UserCtrl: user is loggedIn", $scope.isLoggedIn );
             // $scope.$apply();
-            $window.location.href = "#!/items/list";
+            $window.location.href = "#!/details";
         });
     };
 
@@ -62,7 +62,7 @@ console.log("USERCONTROL");
             var user = result.user.uid;
             console.log("logged in user:", user);
             //Once logged in, go to another view
-            $window.location.href = "#!/items/list";
+            $window.location.href = "#!/details";
             // $scope.$apply();
         }).catch(function(error) {
             // Handle the Errors.
