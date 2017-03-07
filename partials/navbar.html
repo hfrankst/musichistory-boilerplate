@@ -1,12 +1,12 @@
-<!-- make a controller to add functionality -->
 
 <div class="container col l5 center-align" ng-controller="NavBarCtrl">
 	<header>
 		<h6 id="nav-heading">The Greatest of Music History's</h6>
 		<nav class="hoverable">
-			<a href="#!/details" id="list-music">List Music |</a>
-			<a href="#!/form" id="add-music">Add Music</a>
-			<a href="#!/" ng-click="logoutUser()" id="logout">Logout</a>
+			<a href="#!/" ng-show="!isLoggedIn" ng-click="loginGoogle()">Login with Google</a>
+			<a href="#!/details" id="list-music" ng-show="isLoggedIn">List Music |</a>
+			<a href="#!/form" id="add-music" ng-show="isLoggedIn">Add Music</a>
+			<a href="#!/" ng-click="logoutUser()" ng-show="isLoggedIn" id="logout">Logout</a>
 		</nav>
 	</header>
 </div>
