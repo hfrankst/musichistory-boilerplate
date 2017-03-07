@@ -8,7 +8,7 @@ app.config(function($routeProvider) {
 		templateUrl: 'partials/song-details.html',
 		controller: "SongDetailCtrl"
 	}).
-	when('/song-form', {
+	when('/form', {
 		templateUrl: "partials/song-form.html",
 		controller: "SongFormCtrl"
 	}).
