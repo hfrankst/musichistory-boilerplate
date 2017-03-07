@@ -34,7 +34,6 @@ var NewSong = function(oldnewsong){
 
 
 
-///I need to grab the button by its id, then put an event listener on it, looking for a button click
 return oldnewsong;
 
 }(NewSong || {});
