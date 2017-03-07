@@ -3,10 +3,10 @@
 	<header>
 		<h6 id="nav-heading">The Greatest of Music History's</h6>
 		<nav class="hoverable">
-			<a href="#!/" ng-show="!isLoggedIn" ng-click="loginGoogle()">Login with Google</a>
+			<a href="#!/"  ng-click="loginGoogle()" ng-show="!isLoggedIn">Login with Google</a>
 			<a href="#!/details" id="list-music" ng-show="isLoggedIn">List Music |</a>
 			<a href="#!/form" id="add-music" ng-show="isLoggedIn">Add Music</a>
-			<a href="#!/" ng-click="logoutUser()" ng-show="isLoggedIn" id="logout">Logout</a>
+			<a href="#!/" id="logout" ng-click="logoutUser()" ng-show="isLoggedIn">Logout</a>
 		</nav>
 	</header>
 </div>
