@@ -41,10 +41,10 @@
 		</div>
 
 		<div class="right-side col s12 m6 l9 right-aligned hoverable teal accent-3">
-			<div ng-repeat="song in songs | orderBy: 'song' | filter:q as results">
+			<div class="deets" ng-repeat="song in songs | orderBy: 'song' | filter:q as results">
 			<h5>{{song.song}}</h5>
-				<p class="repeated-paragraph">{{song.artist}} | {{song.album}} | {{song.genre}}</p>
-				<i class="material-icons" ng-click="songDelete(song.id)">delete</i>
+				<p class="repeated-paragraph">{{song.artist | uppercase}} | {{song.album | uppercase}} | {{song.genre | uppercase}}</p>
+				<i class="material-icons" ng-click="songDelete(song.id); selected.value = $index">delete</i>
 			</div>
 		</div>
 

@@ -1,6 +1,6 @@
 "use strict";
 
-var app = angular.module("MusicHistory", ['ngRoute']);
+var app = angular.module("MusicHistory", ['ngRoute', 'ngAnimate']);
 
 let isAuth = (AuthFactory) => new Promise ( (resolve, reject) => {
   // console.log("running isAuth");

@@ -65,6 +65,14 @@ legend {
 	display: inline-block;
 }
 
+.my-repeat-animation.ng-leave.ng-leave-active, 
+.my-repeat-animation.ng-enter {
+    opacity: 0;
+    -webkit-transition: opacity 300ms linear;
+    -moz-transition: opacity 300ms linear;
+    transition: opacity 300ms linear;
+}
+
 /*******************************
 *******Login Screen Styling*****
 ********************************/
