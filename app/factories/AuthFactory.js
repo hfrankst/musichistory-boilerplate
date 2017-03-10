@@ -28,7 +28,7 @@ app.factory('AuthFactory', function(){
 	};
 
 	let isAuthenticated = function (){
-		console.log("AuthFactory: isAuthenticated");
+		// console.log("AuthFactory: isAuthenticated");
 		return new Promise ( (resolve, reject) => {
 			firebase.auth().onAuthStateChanged( (user) => {
 				if (user){

@@ -43,7 +43,8 @@
 		<div class="right-side col s12 m6 l9 right-aligned hoverable teal accent-3">
 			<div ng-repeat="song in songs">
 			<h5>{{song.song}}</h5>
-				<p>{{song.artist}} | {{song.album}}</p>
+				<p class="repeated-paragraph">{{song.artist}} | {{song.album}}</p>
+				<i class="material-icons" onclick="songDelete(song.id)">delete</i>
 			</div>
 		</div>
 

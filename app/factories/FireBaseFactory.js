@@ -18,7 +18,7 @@ app.factory("SongStorage", ($q, $http, FBCreds, AuthFactory) => {
 					songCollection[key].id = key;
 					songs.push(songCollection[key]);
 				});
-				console.log("resolved songs", songs);
+				// console.log("resolved songs", songs);
 				resolve(songs);
 			})
 			.catch((error) => {

@@ -3,14 +3,29 @@ body {
 	margin: 1em;
 }
 
+/**************************************
+***************Nav Styling*************
+***************************************/
+
+
 #nav-heading{
 	text-decoration: underline;
 	font-weight: 700;
 }
+
+#logout {
+	float: right;
+	padding-right: 10px;
+}
+
 .divider {
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
+
+/**************************************
+*********List Music Styling************
+***************************************/
 .right-side {
 	/*border: 3px groove black;*/
 	display: inline-block;
@@ -38,10 +53,18 @@ legend {
 	font-size: 1.5em;
 }
 
-#logout {
+.material-icons {
+	display: inline-block;
 	float: right;
-	padding-right: 10px;
 }
+
+.repeated-paragraph {
+	display: inline-block;
+}
+
+/*******************************
+*******Login Screen Styling*****
+********************************/
 
 #blob {
 	font-size: 1em;
