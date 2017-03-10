@@ -1,10 +1,10 @@
 <div class="container col s12 offset s4 hoverable center-align" id="userInput">
 	<legend>Fill out this form to add your Favorite Music</legend>
 	<form id="input-form">
-		Song Name: <input type="text" name="song" id="song"><br><br>
-		Artist: <input type="text" name="artist" id="singer"><br><br>
-		Album: <input type="text" name="album" id="record"><br><br>
+		Song Name: <input ng-model="song.name" type="text" name="song" id="song"><br><br>
+		Artist: <input ng-model="song.artist" type="text" name="artist" id="singer"><br><br>
+		Album: <input ng-model="song.album" type="text" name="album" id="record"><br><br>
 			<br><br>
-		<button class="btn waves-effect waves-light" type="submit" name="action" id="addBtn">Submit</button>			
+		<button class="btn waves-effect waves-light" type="submit" name="action" id="addBtn">Save Song</button>			
 	</form>
 </div>

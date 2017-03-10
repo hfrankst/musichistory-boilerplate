@@ -30,17 +30,21 @@
 				<option>Kind of Blue</option>
 				<option>Hello Louis!</option>
 			</select>
+
+			<br> 
+
+			<label>Genre</label>
+
+			<br>
+
+			<!-- put a bunch of checkboxes here to filter by Genre -->
 		</div>
 
 		<div class="right-side col s12 m6 l9 right-aligned hoverable teal accent-3">
-			<h5>What a Wonderful World</h5>
-				<p>Louis Armstrong | Hello Louis! | Jazz</p>
-			<h5>Khasmir</h5>
-				<p>Led Zepplin | Mothership | Rock</p>
-			<h5>Freddie Freeloader</h5>
-				<p>Miles Davis | Kind of Blue | Jazz</p>
-			<h5>You Shook Me All Night Long</h5>
-				<p>ACDC | Black Ice | Rock</p>
+			<div ng-repeat="song in songs">
+			<h5>{{song.song}}</h5>
+				<p>{{song.artist}} | {{song.album}}</p>
+			</div>
 		</div>
 
 	</div>

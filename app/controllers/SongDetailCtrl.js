@@ -1,11 +1,23 @@
 "use strict";
 
-app.controller("SongDetailCtrl", function($scope, $window, $routeParams, $location){
-console.log("SongDetailCtrl");
+app.controller("SongDetailCtrl", function($scope, $window, AuthFactory, $location, SongStorage){
+// console.log("SongDetailCtrl");
+	
+	$scope.songs = [];
+    let user = AuthFactory.getUser();
+	// console.log("user in SongDetailCtrl", user);
 
-//I need a function that will direct the url to the song-details.html on page load
-	let showSongDetails = () => {
-		$window.location.url = '#!/details';	
-	};
+
+	
+		SongStorage.getSongList(user)
+		.then(function (songs) {
+			console.log("songs", songs);
+			$scope.songs = songs;
+			console.log("$scope.songs", $scope.songs[0]);
+		});
+		
+	
+
+	//use a ng-repeat to populate the songs details
 
 });
