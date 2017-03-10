@@ -34,6 +34,9 @@ body {
 	margin-left: 10px;
 }
 
+.right-side::-webkit-scrollbar { 
+    display: none; 
+}
 
 .left-side {
 	/*border: 3px groove black;*/

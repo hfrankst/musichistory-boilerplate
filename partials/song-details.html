@@ -1,7 +1,7 @@
 <div id="big" class="container mainPageDisplay">
 	<div class="row">
 		<div class="left-side col s12 m6 l3 offset s2 center-aligned hoverable  yellow accent-3">
-			<input id="searchText" type="text" min="0" max="50" value="" maxlength="20" placeholder="Search by Song, Artist, or Album" />
+			<input id="searchText" type="text" min="0" max="50" value="" maxlength="20" placeholder="Search by Song, Artist, or Album" aria-label="filter songs" ng-model="q"/>
 <!-- WILL NEED TO USE A LOT OF NG-MODELS AND HANDLEBARS TO GENERATE THE INFO BELOW -->
 			<br>
 			
@@ -41,10 +41,10 @@
 		</div>
 
 		<div class="right-side col s12 m6 l9 right-aligned hoverable teal accent-3">
-			<div ng-repeat="song in songs">
+			<div ng-repeat="song in songs | orderBy: 'song' | filter:q as results">
 			<h5>{{song.song}}</h5>
-				<p class="repeated-paragraph">{{song.artist}} | {{song.album}}</p>
-				<i class="material-icons" onclick="songDelete(song.id)">delete</i>
+				<p class="repeated-paragraph">{{song.artist}} | {{song.album}} | {{song.genre}}</p>
+				<i class="material-icons" ng-click="songDelete(song.id)">delete</i>
 			</div>
 		</div>
 

@@ -11,15 +11,17 @@ app.controller("SongDetailCtrl", function($scope, $window, AuthFactory, $locatio
 	SongStorage.getSongList(user)
 	.then(function (songs) {
 	$scope.songs = songs;
-		console.log("$scope.songs", $scope.songs[0]);
+		// console.log("$scope.songs", $scope.songs[0]);
 	});
 
 
 
-	let songDelete = (songId) => {
+	$scope.songDelete = (songId) => {
 		SongStorage.deleteSong(songId);
+		SongStorage.getSongList(user);
+
 	};
 
-	$('.material-icons').on('click', songDelete);
+	$('.material-icons').on('click', $scope.songDelete);
 
 });
